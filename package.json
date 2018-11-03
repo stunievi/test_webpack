@@ -13,14 +13,19 @@
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.1",
     "csv-loader": "^3.0.2",
+    "express": "^4.16.4",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.1",
+    "webpack-dev-middleware": "^3.4.0",
     "xml-loader": "^1.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --open",
+    "watch": "webpack --watch",
+    "server": "node server.js"
   },
   "keywords": [],
   "author": "",
